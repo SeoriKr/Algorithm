@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Search">
+      <UniqueIdentifier>{68cc34fc-74de-4bd2-ba85-f14996b90fc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search\DFS">
+      <UniqueIdentifier>{0bef6e12-81a7-4a79-969e-a7d7eb1a4535}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Search\BFS">
+      <UniqueIdentifier>{838adede-95d4-403e-8014-c86bec889829}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sort">
+      <UniqueIdentifier>{10d30cc6-2bca-4c30-9a7d-8954fe41761c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DFS.cpp">
+      <Filter>Search\DFS</Filter>
+    </ClCompile>
+    <ClCompile Include="BubbleSort.cpp">
+      <Filter>Sort</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
