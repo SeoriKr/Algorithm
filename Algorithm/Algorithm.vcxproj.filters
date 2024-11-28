@@ -13,6 +13,9 @@
     <Filter Include="Sort">
       <UniqueIdentifier>{10d30cc6-2bca-4c30-9a7d-8954fe41761c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{ab5d0117-ceb1-4d82-b427-7cda3314260c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="DFS.cpp">
@@ -21,5 +24,10 @@
     <ClCompile Include="BubbleSort.cpp">
       <Filter>Sort</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Utility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
