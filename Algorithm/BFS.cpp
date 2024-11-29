@@ -1,6 +1,4 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
+#include "Utility.h"
 
 #include <queue>
 
@@ -13,8 +11,7 @@ void bfs(int node)
 {
 	queue<int> qNodes;
 
-	qNodes.insert(node);
-	visited.insert(node);
+	qNodes.push(node);
 
 	while (!qNodes.empty())
 	{
@@ -22,14 +19,14 @@ void bfs(int node)
 		qNodes.pop();
 
 		cout << "Now I'm at the : " << nodeNow << endl;
+		
+		visited.insert(nodeNow);
 
-		if (visited.find(nodeNow) == visited.end())
+		for (auto nearNode : relation[nodeNow])
 		{
-			visited.insert(nodeNow);
-
-			for (auto nearNode : relation[node])
+			if (visited.find(nearNode) == visited.end())
 			{
-				qNodes.insert(nearNode);
+				qNodes.push(nearNode);
 			}
 		}
 	}
